@@ -4,4 +4,4 @@ language: objective-c  #1
 #xcode_scheme: NewCandySearch #4
 #xcode_sdk: iphonesimulator #5
 script:
-  - xctool -project NewCandySearch.xcodeproj -target NewCandySearch -scheme NewCandySearch -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool -project NewCandySearch.xcodeproj -target NewCandySearch -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

@@ -57,6 +57,8 @@ class MasterViewController: UITableViewController {
   // MARK: - Private instance methods
 
   func setupSearchController() {
+    
+    
     searchController.searchResultsUpdater = self
     searchController.dimsBackgroundDuringPresentation = false
     definesPresentationContext = true

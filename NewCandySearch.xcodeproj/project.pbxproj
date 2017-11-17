@@ -7,25 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FFEF77D1FBEE50F00F56A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEF77C1FBEE50F00F56A3C /* ViewController.swift */; };
 		400169A71F95A38800B2DDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400169A61F95A38800B2DDD0 /* LaunchScreen.storyboard */; };
 		CD0BEC311F8EFF12000B1CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEC301F8EFF12000B1CF8 /* AppDelegate.swift */; };
-		CD0BEC331F8EFF12000B1CF8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEC321F8EFF12000B1CF8 /* MasterViewController.swift */; };
-		CD0BEC351F8EFF12000B1CF8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEC341F8EFF12000B1CF8 /* DetailViewController.swift */; };
 		CD0BEC381F8EFF12000B1CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEC361F8EFF12000B1CF8 /* Main.storyboard */; };
 		CD0BEC3A1F8EFF12000B1CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEC391F8EFF12000B1CF8 /* Assets.xcassets */; };
-		CD0BEC451F8F0236000B1CF8 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEC441F8F0236000B1CF8 /* Candy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FFEF77C1FBEE50F00F56A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		400169A61F95A38800B2DDD0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD0BEC2D1F8EFF12000B1CF8 /* NewCandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0BEC301F8EFF12000B1CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD0BEC321F8EFF12000B1CF8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		CD0BEC341F8EFF12000B1CF8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CD0BEC371F8EFF12000B1CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD0BEC391F8EFF12000B1CF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0BEC3E1F8EFF12000B1CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD0BEC441F8F0236000B1CF8 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				CD0BEC301F8EFF12000B1CF8 /* AppDelegate.swift */,
-				CD0BEC321F8EFF12000B1CF8 /* MasterViewController.swift */,
-				CD0BEC341F8EFF12000B1CF8 /* DetailViewController.swift */,
-				CD0BEC441F8F0236000B1CF8 /* Candy.swift */,
 				CD0BEC361F8EFF12000B1CF8 /* Main.storyboard */,
 				CD0BEC391F8EFF12000B1CF8 /* Assets.xcassets */,
 				400169A61F95A38800B2DDD0 /* LaunchScreen.storyboard */,
 				CD0BEC3E1F8EFF12000B1CF8 /* Info.plist */,
+				1FFEF77C1FBEE50F00F56A3C /* ViewController.swift */,
 			);
 			path = NewCandySearch;
 			sourceTree = "<group>";
@@ -142,9 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0BEC351F8EFF12000B1CF8 /* DetailViewController.swift in Sources */,
-				CD0BEC451F8F0236000B1CF8 /* Candy.swift in Sources */,
-				CD0BEC331F8EFF12000B1CF8 /* MasterViewController.swift in Sources */,
+				1FFEF77D1FBEE50F00F56A3C /* ViewController.swift in Sources */,
 				CD0BEC311F8EFF12000B1CF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

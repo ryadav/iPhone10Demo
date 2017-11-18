@@ -12,4 +12,4 @@ language: objective-c
 xcode_project: NewCandySearch.xcodeproj
 xcode_scheme: NewCandySearch
 script:
-    - xcodebuild clean build CODE_SIGNING_REQUIRED=NO
+    - xcodebuild clean build -sdk iphonesimulator11.0 -project NewCandySearch.xcodeproj -scheme NewCandySearch CODE_SIGNING_REQUIRED=NO

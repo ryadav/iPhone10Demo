@@ -11,3 +11,5 @@ xcode_sdk: iphonesimulator11.0
 language: objective-c
 xcode_project: NewCandySearch.xcodeproj
 xcode_scheme: NewCandySearch
+script:
+    - xcodebuild clean build -sdk iphonesimulator -project NewCandySearch.xcodeproj -scheme NewCandySearch CODE_SIGNING_REQUIRED=NO

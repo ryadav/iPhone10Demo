@@ -16,15 +16,19 @@
 		CD0BEC311F8EFF12000B1CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0BEC301F8EFF12000B1CF8 /* AppDelegate.swift */; };
 		CD0BEC381F8EFF12000B1CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEC361F8EFF12000B1CF8 /* Main.storyboard */; };
 		CD0BEC3A1F8EFF12000B1CF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0BEC391F8EFF12000B1CF8 /* Assets.xcassets */; };
+		EC80C655C1B144690D374F1F /* Pods_NewCandySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7CE627A37CF9989C0EAD87 /* Pods_NewCandySearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		400169A61F95A38800B2DDD0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F7CE627A37CF9989C0EAD87 /* Pods_NewCandySearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewCandySearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAAA86D45F97902424E7134 /* Pods-NewCandySearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewCandySearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewCandySearch/Pods-NewCandySearch.release.xcconfig"; sourceTree = "<group>"; };
 		B72ED23A1FC085AF00E6F060 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		B72ED23B1FC085AF00E6F060 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		B72ED23C1FC085AF00E6F060 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		B72ED23D1FC085AF00E6F060 /* CandyTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyTheme.swift; sourceTree = "<group>"; };
 		B72ED23E1FC085B000E6F060 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CBB8724B91DD37A5037ED8FD /* Pods-NewCandySearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewCandySearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewCandySearch/Pods-NewCandySearch.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0BEC2D1F8EFF12000B1CF8 /* NewCandySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewCandySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0BEC301F8EFF12000B1CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD0BEC371F8EFF12000B1CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC80C655C1B144690D374F1F /* Pods_NewCandySearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64A6BE33396A5FD88814DD8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBB8724B91DD37A5037ED8FD /* Pods-NewCandySearch.debug.xcconfig */,
+				8FAAA86D45F97902424E7134 /* Pods-NewCandySearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD0BEC241F8EFF12000B1CF8 = {
 			isa = PBXGroup;
 			children = (
 				CD0BEC2F1F8EFF12000B1CF8 /* NewCandySearch */,
 				CD0BEC2E1F8EFF12000B1CF8 /* Products */,
+				64A6BE33396A5FD88814DD8E /* Pods */,
+				DD0611309F206CF699622214 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +92,14 @@
 			path = NewCandySearch;
 			sourceTree = "<group>";
 		};
+		DD0611309F206CF699622214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F7CE627A37CF9989C0EAD87 /* Pods_NewCandySearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD0BEC411F8EFF12000B1CF8 /* Build configuration list for PBXNativeTarget "NewCandySearch" */;
 			buildPhases = (
+				6215778C69AD0B265A717053 /* [CP] Check Pods Manifest.lock */,
 				CD0BEC291F8EFF12000B1CF8 /* Sources */,
 				CD0BEC2A1F8EFF12000B1CF8 /* Frameworks */,
 				CD0BEC2B1F8EFF12000B1CF8 /* Resources */,
+				15634FFC3C32128946697102 /* [CP] Embed Pods Frameworks */,
+				C9A8F2BCD4B033A24E47A8C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15634FFC3C32128946697102 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewCandySearch/Pods-NewCandySearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6215778C69AD0B265A717053 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A8F2BCD4B033A24E47A8C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewCandySearch/Pods-NewCandySearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD0BEC291F8EFF12000B1CF8 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		CD0BEC421F8EFF12000B1CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB8724B91DD37A5037ED8FD /* Pods-NewCandySearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -297,6 +373,7 @@
 		};
 		CD0BEC431F8EFF12000B1CF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FAAA86D45F97902424E7134 /* Pods-NewCandySearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

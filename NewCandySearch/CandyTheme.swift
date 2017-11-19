@@ -30,35 +30,6 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-  
-  @IBOutlet weak var detailDescriptionLabel: UILabel!
-  @IBOutlet weak var candyImageView: UIImageView!
-  
-  var detailCandy: Candy? {
-    didSet {
-      configureView()
-    }
-  }
-  
-  func configureView() {
-    if let detailCandy = detailCandy {
-      if let detailDescriptionLabel = detailDescriptionLabel, let candyImageView = candyImageView {
-        detailDescriptionLabel.text = detailCandy.name
-        candyImageView.image = UIImage(named: detailCandy.name)
-        title = detailCandy.category
-      }
-    }
-  }
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    configureView()
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-  }
-  
+extension UIColor {
+  static let candyGreen = UIColor(red: 67.0/255.0, green: 205.0/255.0, blue: 135.0/255.0, alpha: 1.0)
 }
-

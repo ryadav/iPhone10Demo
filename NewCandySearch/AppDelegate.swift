@@ -32,30 +32,39 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
-
+  
   var window: UIWindow?
-
-
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     let splitViewController = window!.rootViewController as! UISplitViewController
     let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
     navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
     splitViewController.delegate = self
-    return true
-  }
+    
+//    UISearchBar.appearance().barTintColor = .candyGreen
+    UISearchBar.appearance().tintColor = .white
+    // Change tintColor to .candyGreen if/when backgroundColor = .white works 
+    UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .white
+    UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .white
 
+    let placeholderAttributes: [NSAttributedStringKey : Any] = [NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.white, NSAttributedStringKey(rawValue: NSAttributedStringKey.font.rawValue): UIFont.systemFont(ofSize: UIFont.systemFontSize)]
+    let attributedPlaceholder: NSAttributedString = NSAttributedString(string: "Search", attributes: placeholderAttributes)
+    UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).attributedPlaceholder = attributedPlaceholder
+
+    return true    
+  }
+  
   // MARK: - Split view
-
   func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
-      guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
-      guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
-      if topAsDetailController.detailItem == nil {
-          // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
-          return true
-      }
-      return false
+    guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+    guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
+    if topAsDetailController.detailCandy == nil {
+      // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+      return true
+    }
+    return false
   }
-
+  
 }
 

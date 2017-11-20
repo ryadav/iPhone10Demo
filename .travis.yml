@@ -1,11 +1,19 @@
-
 osx_image: xcode9
 xcode_sdk: iphonesimulator11.0
 language: objective-c
 xcode_project: NewCandySearch.xcodeproj
 xcode_scheme: NewCandySearch
-#script:
-#    - xcodebuild clean build -sdk iphonesimulator11.0 -project NewCandySearch.xcodeproj -scheme NewCandySearch CODE_SIGNING_REQUIRED=NO
-    
+before_script:
+- ./scripts/add-key.sh
+- ./scripts/update-bundle.sh
 script:
-    - xcodebuild clean build -sdk iphonesimulator11.0 -workspace NewCandySearch.xcworkspace -scheme NewCandySearch CODE_SIGNING_REQUIRED=NO
+- xctool -workspace NewCandySearch.xcworkspace -scheme NewCandySearch -sdk iphoneos
+  -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
+after_script:
+- ./scripts/remove-key.sh
+env:
+  global:
+  - APP_NAME="NewCandySearch"
+  - INFO_PLIST="NewCandySearch/Info.plist"
+  - PROFILE_NAME="TCS_Distribution_Profile_16To17"
+  - secure: oEfLhiRIN8KvL6/3sSokDakALzYlDErHpsqzmumvMfeItGSNr7+cIzAuvUd1jwjvxfOpcb/jxJt0V6El4jV4QtN1v8pC129mKMtNcviaLBfZN+eoOLl11RQ5OaJew3NoyvKlxViZUdfk2M403STo6FjAPPvoszgXwiimswYorMW9UpilpEykl8tpTMTWWlZ+vggelGtFDs0SJLg/tgYZ3fDmcXN9oOBmvvqbRw4C7MfBfgtG4NrL9HyZtkYt0lF7e2/pRdYr8bziZ3/wS4DJvmWR57zKdhJfI5M8sYK9jG5mmz44fxFZUqdHfARPYvx3s4RX5pQW66kNcfZ9YACqNk389mw+2GCCM+vedZx87aMGmdMaz2S6fZcd4nBwxNFKjQ5Tm4bnvMz5MQjX7Ymnw0frspj1KgcDK78KFYO80CCxxT7O4YHpwjH5q0FJwCHdV4Uy/cWTID0rlXlsaAUZoMktsKhdtYIwVg4ey8B+jcOdaB9rpwjs9+xhLFu8KdnXPa1JQJRwh01AT9AFOBUiAp3vckrh/Wr0xB+NaFpPLtFV8L0F2MLDaZZaTHqSgT/gsZideYPmUFCW3LM4gEjWM1Y8DH7P7OgBb447TS8l0Sz1xaFgWWBI/Choterq+FyJpQ6biw/YFCl0KUJfS2fPacH2YPv+0Yn1IcrFq0pd96U=

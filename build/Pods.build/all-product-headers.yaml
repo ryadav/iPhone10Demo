@@ -1,0 +1,60 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/travis/Desktop/iPhone10Demo/build/Release-iphoneos/Pods_NewCandySearch.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-NewCandySearch-umbrella.h",
+          'external-contents': "/Users/travis/Desktop/iPhone10Demo/Pods/Target Support Files/Pods-NewCandySearch/Pods-NewCandySearch-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_NewCandySearch-Swift.h",
+          'external-contents': "/Users/travis/Desktop/iPhone10Demo/build/Release-iphoneos/Pods_NewCandySearch.framework/Headers/Pods_NewCandySearch-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/travis/Desktop/iPhone10Demo/build/Release-iphoneos/Pods_NewCandySearch.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/travis/Desktop/iPhone10Demo/build/Pods.build/Release-iphoneos/Pods-NewCandySearch.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/travis/Desktop/iPhone10Demo/build/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftyJSON-Swift.h",
+          'external-contents': "/Users/travis/Desktop/iPhone10Demo/build/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftyJSON-umbrella.h",
+          'external-contents': "/Users/travis/Desktop/iPhone10Demo/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/travis/Desktop/iPhone10Demo/build/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/travis/Desktop/iPhone10Demo/build/Pods.build/Release-iphoneos/SwiftyJSON.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

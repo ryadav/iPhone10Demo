@@ -7,7 +7,6 @@ before_script:
 - ./scripts/add-key.sh
 - ./scripts/update-bundle.sh
 
-install: travis_wait 30 mvn install
 
 script:
 - xcodebuild clean build -workspace NewCandySearch.xcworkspace -scheme NewCandySearch -sdk iphoneos

@@ -12,10 +12,11 @@ script:
 after_script:
 - ./scripts/remove-key.sh
 after_success:
-- ./scripts/hockeyUploadScript.sh
+- ./scripts/testflight.sh
+
 env:
   global:
-  - APP_NAME="ObjC-IOS"
+  - APP_NAME="NewCandySearch"
   - DEVELOPER_NAME="Pfizer International Inc"
   - INFO_PLIST="NewCandySearch/Info.plist"
   - PROFILE_NAME="TCS_Distribution_Profile_16To17"

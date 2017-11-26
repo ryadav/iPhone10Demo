@@ -3,16 +3,16 @@ language: objective-c
 xcode_project: NewCandySearch.xcodeproj
 xcode_scheme: NewCandySearch
 before_script:
-- "./scripts/add-key.sh"
-- "./scripts/update-bundle.sh"
-- "./scripts/sign-and-upload.sh"
+- ./scripts/add-key.sh
+- ./scripts/update-bundle.sh
+- ./scripts/sign-and-upload.sh
 script:
 - xcodebuild clean build -project NewCandySearch.xcodeproj -scheme NewCandySearch
   -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 after_script:
-- "./scripts/remove-key.sh"
+- ./scripts/remove-key.sh
 after_success:
-- "./scripts/HockeySDK.sh"
+- ./scripts/hockeyUploadScript.sh
 env:
   global:
   - APP_NAME="ObjC-IOS"

@@ -36,3 +36,10 @@ curl https://rink.hockeyapp.net/api/2/apps/$HOCKEY_APP_ID/app_versions \
   -H "X-HockeyAppToken: $HOCKEY_APP_TOKEN"
   
   echo "** build completed **"
+
+
+ipa distribute:itunesconnect \
+ —-file "$OUTPUTDIR/$APP_NAME.ipa" \
+ —-account michael.rieger95@gmail.com \
+ -p Uwodeveva920 \
+ —-apple-id 1188620534 —-upload —-verbose

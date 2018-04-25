@@ -32,5 +32,6 @@ import Foundation
 
 struct Candy {
   let category : String
+  // test branching
   let name : String
 }

@@ -101,6 +101,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   
   override func viewWillAppear(_ animated: Bool) {
     if splitViewController!.isCollapsed {
+        
       if let selectionIndexPath = tableView.indexPathForSelectedRow {
         tableView.deselectRow(at: selectionIndexPath, animated: animated)
       }
